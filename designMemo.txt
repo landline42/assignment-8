@@ -1,0 +1,11 @@
+1. Why is a hash table the right structure for fast lookups?
+
+A hash table is the right data structure for fast lookups, because the hash value is used to find the exact place data is stored in the structure. Instead of having to traverse an entire list or tree, the hash is calculated from the key and used to jump to the spot the corresponding data is stored. 
+
+2. How did you handle collisions?
+
+In this program, I handled collisions by using a linked list to store values that hash to the same index. This method allows multiple contacts to be stored at the same index. 
+
+3. When might an engineer choose a hash table over a list or tree?
+
+A software engineer might choose a hash table over a list or tree when the ability to quickly fetch values is required for the functionality of their program. However, hash tables require more memory usage than a list or tree. An application that handles patient records for a hospital would be a good candidate for a hash table, since specific patient records would need to be fetched quickly and hospitals have large numbers of patients. In a hospital setting speed is essential; a doctor can’t afford to wait while an application traverses through a list or tree with thousands of patient records. When fast lookups are important, a software engineer might choose a hash table over another data structure. 
